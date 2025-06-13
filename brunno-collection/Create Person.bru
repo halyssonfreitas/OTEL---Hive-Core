@@ -1,0 +1,20 @@
+meta {
+  name: Create Person
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/people
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Pluma",
+    "endname": "Cat",
+    "email": "pluma@cat.com",
+    "birtDate": "01/01/2021"
+  }
+}
